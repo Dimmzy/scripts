@@ -1,0 +1,135 @@
+[*]Max-Min Heap Program[*]
+>> Please enter the action to perform
+[1] Build Heap
+[0] Exit
+1
+>> Would you like to load the array from a file? yes/no
+no
+Please enter the array in the following CSV format:
+<element1>,<element2>,...,<elementN>
+1,2,3,4,5,6,7,8,1,2,9,0,11,31,22,51,1337
+>> Please enter the action to perform
+[1] Insert
+[2] Delete
+[3] Extract Min
+[4] Extract Max
+[5] Print Heap
+[0] Exit
+5
+Printing heap:
+[1337,1,0,51,9,11,31,1,2,2,5,3,6,7,22,4,8]
+>> Please enter the action to perform
+[1] Insert
+[2] Delete
+[3] Extract Min
+[4] Extract Max
+[5] Print Heap
+[0] Exit
+3
+Minimum key is 0
+>> Please enter the action to perform
+[1] Insert
+[2] Delete
+[3] Extract Min
+[4] Extract Max
+[5] Print Heap
+[0] Exit
+4
+Maximum key is 1337
+>> Please enter the action to perform
+[1] Insert
+[2] Delete
+[3] Extract Min
+[4] Extract Max
+[5] Print Heap
+[0] Exit
+1
+>> Please enter the key to insert:
+7331
+>> Please enter the action to perform
+[1] Insert
+[2] Delete
+[3] Extract Min
+[4] Extract Max
+[5] Print Heap
+[0] Exit
+4
+Maximum key is 7331
+>> Please enter the action to perform
+[1] Insert
+[2] Delete
+[3] Extract Min
+[4] Extract Max
+[5] Print Heap
+[0] Exit
+5
+Printing heap:
+[7331,1,0,1337,9,11,31,1,2,2,5,3,6,7,22,4,8,51]
+>> Please enter the action to perform
+[1] Insert
+[2] Delete
+[3] Extract Min
+[4] Extract Max
+[5] Print Heap
+[0] Exit
+2
+>> Please enter the index to delete: (Starting at 0)
+3
+>> Please enter the action to perform
+[1] Insert
+[2] Delete
+[3] Extract Min
+[4] Extract Max
+[5] Print Heap
+[0] Exit
+5
+Printing heap:
+[7331,1,0,51,9,11,31,1,2,2,5,3,6,7,22,4,8]
+>> Please enter the action to perform
+[1] Insert
+[2] Delete
+[3] Extract Min
+[4] Extract Max
+[5] Print Heap
+[0] Exit
+2
+>> Please enter the index to delete: (Starting at 0)
+2
+>> Please enter the action to perform
+[1] Insert
+[2] Delete
+[3] Extract Min
+[4] Extract Max
+[5] Print Heap
+[0] Exit
+5
+Printing heap:
+[7331,1,3,51,9,11,31,1,2,2,5,8,6,7,22,4]
+>> Please enter the action to perform
+[1] Insert
+[2] Delete
+[3] Extract Min
+[4] Extract Max
+[5] Print Heap
+[0] Exit
+3
+Minimum key is 1
+>> Please enter the action to perform
+[1] Insert
+[2] Delete
+[3] Extract Min
+[4] Extract Max
+[5] Print Heap
+[0] Exit
+4
+Maximum key is 7331
+>> Please enter the action to perform
+[1] Insert
+[2] Delete
+[3] Extract Min
+[4] Extract Max
+[5] Print Heap
+[0] Exit
+0
+Exiting...
+

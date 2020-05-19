@@ -35,14 +35,14 @@ void MaxMinHeap::heapifyUp(int i) {
   if (i == 0) return;
   int parent = (i - 1) / 2;
   int currentLevel = floor(log2(i+1));
-  if (currentLevel % 2) { // Min level
+  if (currentLevel % 2) { // Max level
     if (this->array[parent] < this->array[i]) { // If the parent is smaller than the current node (on min level)
       std::swap(this->array[parent], this->array[i]); // Swap them
       heapifyUpMax(parent); // Keep going up
     } else {
       heapifyUpMin(i);
     }
-  } else { // Max level
+  } else { // Min level
     if (this->array[parent] > this->array[i]) { // If the parent is larger than the current node (on max level)
       std::swap(this->array[parent],this->array[i]); // Swap them
       heapifyUpMin(parent);  // Keep going up, through a min level
@@ -78,7 +78,7 @@ void MaxMinHeap::heapifyUpMin(int i) {
   int grandparent = (parent - 1) / 2;
   if (this->array[i] < this->array[grandparent]) { // Swaps with grandparents if needed and keeps going
     std::swap(this->array[i], this->array[grandparent]);
-    heapifyUpMax(grandparent);
+    heapifyUpMin(grandparent);
   }
 }
 
@@ -201,10 +201,10 @@ void MaxMinHeap::heapExtractMin() {
   else if (this->array.size() == 1)
      std::cout << "Minimum key is " << this->array[0] << std::endl;
   else {
-    if (this->array[1] > this->array[0])
-      std::cout << "Minimum key is " << this->array[0] << std::endl;
-    else
+    if (this->array[2] > this->array[1])
       std::cout << "Minimum key is " << this->array[1] << std::endl;
+    else
+      std::cout << "Minimum key is " << this->array[2] << std::endl;
   }
 }
 
